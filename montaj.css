@@ -1,0 +1,80 @@
+.montajBg {
+  background-color: #e8f1f5;
+}
+.montajbtn {
+  background-color: #e50f25 !important;
+  color: white;
+}
+.montajbtn:hover {
+  background-color: #e50f25 !important;
+  color: white;
+}
+
+.montajprofile-picture img {
+  width: 145.69px;
+  height: 145.69px;
+}
+.montajCalendarArea {
+  .calendar-title {
+    background-color: white !important;
+  }
+}
+
+.montajAppointmentArea {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 13px;
+  padding: 15px;
+}
+
+.montajAppointmentArea headingArea h3 {
+  font-size: 29.18px;
+  font-weight: 600;
+  font-family: ital;
+}
+.buttonArea {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.buttonAreabtn {
+  font-family: ital;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e8f1f5;
+}
+.clockImg {
+  width: 16px !important;
+  margin-right: 5px;
+  transform: translateY(-1px);
+}
+.MontajMemberOFIbneSinha {
+  margin-top: 20px;
+  color: rgba(0, 150, 136, 1);
+  font-size: 24.31px;
+  font-weight: 600;
+}
+
+.singleAppointmentArea {
+  background-color: #e8f1f5;
+  margin-top: 20px;
+  border-radius: 13px;
+  padding: 15px;
+}
+.singleMemberbuttonAreabtn {
+  font-family: ital;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+}
+
+.singleMemberProfile-picture img {
+  height: 300px;
+}
+
+.singleMemberBg {
+  background-color: #fff !important;
+}
