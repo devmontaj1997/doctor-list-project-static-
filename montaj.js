@@ -13,6 +13,7 @@ const mobileSingleDoctorArea = document.querySelector("#collapseMember3972");
 
 // Add click event listener to the new button
 mobileButton.addEventListener("click", () => {
-  // Toggle the 'show' class on the mobile element
+ 
+
   mobileSingleDoctorArea.classList.toggle("show");
 });

@@ -122,6 +122,7 @@
           font-weight: 600;
           display: inline-block;
           cursor: pointer;
+          border: none;
 
           img {
             width: 17.02px;
@@ -162,6 +163,7 @@
           font-weight: 400;
           font-size: 19.45px;
           line-height: 34.04px;
+          border: none;
           img {
             width: 29.18px;
             transform: translateY(-3px);
@@ -185,9 +187,14 @@
 
 /* Show the element when it has the 'show' class */
 .singleDoctorArea.show {
-  max-height: 1000px; /* Adjust as needed based on content height */
+  max-height: 1000px;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  /* Adjust as needed based on content height */
 }
 .singleDoctorArea {
+  margin: 20px 0;
 
   .heading {
     h2 {
@@ -223,6 +230,7 @@
           .btnArea {
             button {
               background-color: white;
+              border: none;
             }
           }
         }
@@ -289,9 +297,9 @@
       .buttonArea {
         display: flex;
         gap: 20.16px;
-        .btn {
+        .mybtn {
           a {
-            padding: 9.16px 15.45px;
+            padding: 9.16px 12.45px;
             font-size: 15.45px;
             font-weight: 600;
 
@@ -392,8 +400,9 @@
       .mobile_location {
         display: flex;
         gap: 15px;
+        margin-bottom: 10px;
         img {
-          width: 20px;
+          width: 10px;
         }
         p {
           font-family: "Inter", sans-serif;
@@ -452,16 +461,7 @@
         }
       }
     }
-    .mobile_singleDoctorArea {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease-out;
-    }
-    
-    /* Show the mobile element when it has the 'show' class */
-    .mobile_singleDoctorArea.show {
-      max-height: 1000px; /* Adjust as needed based on content height */
-    }
+
     .mobile_singleDoctorArea {
       .heading {
         h2 {
@@ -483,7 +483,7 @@
 
     .mobile_secondArea {
       .mobile_calendarArea {
-        background: #ffffff;
+        background: #e8f1f5;
 
         margin-top: 30px;
         border-radius: 24px;
@@ -503,7 +503,7 @@
 
       .mobile_rightArea {
         .appointmentArea {
-          background: white;
+          background: #e8f1f5;
           border-radius: 24px;
           padding: 20px;
           margin: 20px 0;
@@ -527,14 +527,15 @@
               width: 152.22px;
               height: 62.94px;
               border-radius: 12.16px;
-              background: #e8f1f5;
+              background: white;
               font-family: "Inter", sans-serif;
               font-weight: 400;
               font-size: 19.45px;
               line-height: 34.04px;
+              border: none;
               img {
                 width: 29.18px;
-                transform: translateY(6px);
+                transform: translateY(-3px);
               }
             }
           }
@@ -571,6 +572,10 @@
           }
         }
         .mobile_location {
+          margin-bottom: 10px;
+          img {
+            width: 11px;
+          }
           p {
             font-family: "Inter", sans-serif;
             font-size: 12px;
@@ -594,7 +599,7 @@
           display: flex;
           margin: 25px 0;
           gap: 10.16px;
-          .btn {
+          .mybtn {
             padding: 0;
             a {
               padding: 5.16px 10.45px;
@@ -608,6 +613,7 @@
           }
         }
       }
+
       .mobile_singleDoctorArea {
         .heading {
           h2 {
@@ -617,7 +623,7 @@
         }
         .mobile_memberArea {
           background-color: white;
-          margin-top: 8px;
+          margin: 8px 0;
           padding: 10px;
           border-radius: 24.31px;
           box-shadow: 0px 4.86px 4.86px 0px #00000040;
@@ -630,7 +636,7 @@
 
       .mobile_secondArea {
         .mobile_calendarArea {
-          background: #ffffff;
+          background: #e8f1f5;
 
           margin-top: 30px;
           border-radius: 24px;
@@ -650,26 +656,23 @@
 
         .mobile_rightArea {
           .appointmentArea {
-            background: white;
+            background: #e8f1f5;
             border-radius: 24px;
             padding: 20px;
             margin: 20px 0;
 
             .headingArea {
               h3 {
-              
                 font-size: 18.18px;
-                
               }
             }
 
             .btnArea {
-              
               button {
                 width: 152.22px;
                 height: 62.94px;
                 border-radius: 12.16px;
-                background: #e8f1f5;
+                background: white;
                 font-family: "Inter", sans-serif;
                 font-weight: 400;
                 font-size: 19.45px;
@@ -687,3 +690,17 @@
   }
 }
 /* this for Mobile end */
+
+/* for mobile toggle */
+.mobile_singleDoctorArea {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.mobile_singleDoctorArea.show {
+  max-height: 1000px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* for mobile toggle */
